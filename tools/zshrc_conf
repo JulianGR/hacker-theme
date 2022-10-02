@@ -47,7 +47,7 @@ alias python='python3'
 ZSH_TMUX_AUTOSTART=true
 
 
-# ======FUNCIONES CUSTOM=====
+# ====== CUSTOM FUNCTIONS =====
 
 # Extract nmap information
 function extractPorts(){

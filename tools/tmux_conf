@@ -19,8 +19,13 @@ set -g @dracula-show-time false
 
 set-option -g default-shell /bin/zsh
 
-# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
-#run '~/.tmux/plugins/tpm/tpm'
+set-option -g status-right ""
+set -g mouse on
+set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 
-# si queremos reiniciar el tmux
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+# run '~/.tmux/plugins/tpm/tpm'
+
+# If you want to reboot tmux config:
 #tmux source ~/.tmux.conf.local
