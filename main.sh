@@ -36,7 +36,7 @@ cd ..
 sudo rm -r sxhkd/
 mkdir ~/.config/sxhkd
 cp examples/sxhkdrc ~/.config/sxhkd/   
-cp dot-files/tools/sxhkdrc ~/.config/sxhkd
+cp hacker-theme/tools/sxhkdrc ~/.config/sxhkd
 sudo rm -r examples/   
 
 
@@ -62,12 +62,12 @@ cd ..
 
 # =========== Installing configs ===============
 mkdir ~/.wallpapers
-cp dot-files/tools/wallpaper.jpg ~/.wallpapers
+cp hacker-theme/tools/wallpaper.jpg ~/.wallpapers
 echo 'feh --bg-fill ~/.wallpapers/wallpaper.jpg' >> ~/.config/bspwm/bspwmrc
 echo 'xsetroot -cursor_name left_ptr &' >> ~/.config/bspwm/bspwmrc
 echo 'wmname LG3D &' >> ~/.config/bspwm/bspwmrc
 
-cp -r dot-files/tools/polybar-backup/ .
+cp -r hacker-theme/tools/polybar-backup/ .
 sudo mv polybar-backup/ ~/.config/
 sudo rm -r ~/.config/polybar/ 2>/dev/null
 sudo mv ~/.config/polybar-backup/ ~/.config/polybar/
@@ -75,7 +75,7 @@ echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
 
 mkdir ~/.config/picom
 echo 'bspc config focus_follows_pointer true' >> ~/.config/bspwm/bspwmrc  
-cp dot-files/tools/picom.conf ~/.config/picom   
+cp hacker-theme/tools/picom.conf ~/.config/picom   
 echo 'bspc config border_width 0' >> ~/.config/bspwm/bspwmrc
 mkdir ~/.config/bin
 echo 'picom --experimental-backends &' >> ~/.config/bspwm/bspwmrc
@@ -89,7 +89,7 @@ sudo cp ~/.config/polybar/fonts/* /usr/share/fonts
 wget https://raw.githubusercontent.com/yorkox0/exaple01/main/hackthebox.sh
 chmod +x hackthebox.sh
 mv hackthebox.sh ~/.config/bin
-cp dot-files/tools/target_to_hack.sh .
+cp hacker-theme/tools/target_to_hack.sh .
 chmod +x target_to_hack.sh
 mv target_to_hack.sh ~/.config/bin
 echo '' > ~/.config/bin/target
@@ -103,8 +103,8 @@ sudo rm nord.rasi
 
 
 # =========== Adding settarget and cleartarget commands ===============
-sudo cp dot-files/tools/settarget /bin
-sudo cp dot-files/tools/cleartarget /bin
+sudo cp hacker-theme/tools/settarget /bin
+sudo cp hacker-theme/tools/cleartarget /bin
 sudo chmod +x /bin/settarget
 sudo chmod +x /bin/cleartarget
 
@@ -129,7 +129,7 @@ sudo update-grub
 
 # =========== Installing Hack Nerd fonts ===============
 cd
-cp dot-files/tools/Hack.zip .
+cp hacker-theme/tools/Hack.zip .
 unzip Hack.zip
 sudo mv *.ttf /usr/share/fonts
 rm *.zip
@@ -161,7 +161,7 @@ cp /home/$USER/.tmux/.tmux.conf.local /home/$USER
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 curl -L git.io/antigen > .antigen.zsh
-cp /home/$USER/dot-files/tools/zshrc_conf $HOME/.zshrc
+cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
 
 # =========== Installing color scheme ===============
 mkdir -p "$HOME/src"
