@@ -1,24 +1,26 @@
 Tested in Parrot Security OS. It is likely that it will work on every Debian-based system.
 
 # Overview
-![BSPWM](https://i.ibb.co/B4YbKDy/2021-12-07-150410-1920x1080-scrot.png "autoBSPWM by yorkox")
+![BSPWM](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview.gif)
 
+
+![BSPWM2](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/overview.png)
 
 ## System setup:
-- **OS**: Parrot security OS
-- **WM**: bspwm
-- **Terminal**: gnome-terminal
+- **OS**: [Parrot security OS](https://www.parrotsec.org/)
+- **WM**: [bspwm](https://github.com/baskerville/bspwm)
+- **Terminal**: [gnome-terminal](https://en.wikipedia.org/wiki/GNOME_Terminal)
 - **Shell**: 
-  - ZSH + Oh-my-zsh
-  - Plugin manager for ZSH: Antigen
-  - Theme: powerlevel10k
-  - Color scheme: Nord
-  - Tmux + Oh-my-tmux + Dracula theme
-- **Compositor**: Picom
-- **Application Launcher**: Rofi
-- **Font**: Hack Nerd Font
-- **Polybar**
-- **sxhkd**: Daemon for shorcuts
+  - [ZSH](https://www.zsh.org/) + [Oh-my-zsh](https://ohmyz.sh/)
+  - Plugin manager for ZSH: [Antigen](https://github.com/zsh-users/antigen)
+  - Theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
+  - Color scheme: [Gogh - Nord](https://gogh-co.github.io/Gogh/)
+  - [Tmux](https://en.wikipedia.org/wiki/Tmux) + [Oh-my-tmux](https://github.com/gpakosz/.tmux) + [tpm](https://github.com/tmux-plugins/tpm) + [Dracula](https://draculatheme.com/tmux) theme
+- **Compositor**: [Picom](https://github.com/jonaburg/picom)
+- **Application Launcher**: [Rofi](https://github.com/davatorium/rofi)
+- **Font**: [Hack Nerd Font](https://www.nerdfonts.com/)
+- [**Polybar**](https://github.com/polybar/polybar)
+- [**sxhkd**](https://github.com/baskerville/sxhkd): Daemon for shorcuts
 
 # Installation
 The installation is made up of two parts: one automatic and one manual (I could have made it automatic, but manual installation has less probability of errors). 
