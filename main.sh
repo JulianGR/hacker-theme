@@ -65,14 +65,15 @@ mkdir ~/.wallpapers
 cp hacker-theme/tools/wallpaper.jpg ~/.wallpapers
 echo 'feh --bg-fill ~/.wallpapers/wallpaper.jpg' >> ~/.config/bspwm/bspwmrc
 echo 'xsetroot -cursor_name left_ptr &' >> ~/.config/bspwm/bspwmrc
+echo 'vmware-user-suid-wrapper &' >> ~/.config/bspwm/bspwmrc
 echo 'wmname LG3D &' >> ~/.config/bspwm/bspwmrc
 
 cp -r hacker-theme/tools/polybar-backup/ .
 sudo mv polybar-backup/ ~/.config/
 sudo rm -r ~/.config/polybar/ 2>/dev/null
 sudo mv ~/.config/polybar-backup/ ~/.config/polybar/
-sudo chmod 777 hacker-theme/tools/polybar-backup/launch.sh
-echo '~/.config/polybar/./launch.sh' >> ~/.config/bspwm/bspwmrc
+sudo chmod 777 ~/.config/polybar/launch.sh
+echo '~/.config/polybar/launch.sh' >> ~/.config/bspwm/bspwmrc
 
 mkdir ~/.config/picom
 echo 'bspc config focus_follows_pointer true' >> ~/.config/bspwm/bspwmrc  
