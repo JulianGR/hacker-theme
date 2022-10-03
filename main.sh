@@ -118,6 +118,13 @@ sudo apt install -y ./google-chrome-stable_current_amd64.deb
 sudo rm ./google-chrome-stable_current_amd64.deb
 cd
 
+# =========== Installing opera ===============
+
+curl -fsSL https://deb.opera.com/archive.key | sudo gpg --dearmor -o /usr/share/keyrings/operabrowser-keyring.gpg 
+echo "deb [signed-by=/usr/share/keyrings/operabrowser-keyring.gpg] https://deb.opera.com/opera-stable/ stable non-free" | sudo tee /etc/apt/sources.list.d/opera-stable.list
+sudo apt update
+sudo DEBIAN_FRONTEND=noninteractive apt install -y opera-stable
+
 # =========== Installing gems ===============
 sudo gem install evil-winrm colorls
 
@@ -168,11 +175,11 @@ cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
 mkdir -p "$HOME/src"
 cd "$HOME/src"
 git clone https://github.com/Gogh-Co/Gogh.git gogh
-./gogh/themes/dracula.sh
-# if you want other theme: ./gogh/themes/nord.sh
+./gogh/themes/nord.sh
+# if you want other theme: ./gogh/themes/dracula.sh
 
 cd
-rm -r src/
+sudo rm -r src/
 rm LICENSE.md
 rm readme.md
 

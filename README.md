@@ -12,7 +12,7 @@ Tested in Parrot Security OS. It is likely that it will work on every Debian-bas
   - ZSH + Oh-my-zsh
   - Plugin manager for ZSH: Antigen
   - Theme: powerlevel10k
-  - Color scheme: Dracula
+  - Color scheme: Nord
   - Tmux + Oh-my-tmux + Dracula theme
 - **Compositor**: Picom
 - **Application Launcher**: Rofi
