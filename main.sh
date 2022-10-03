@@ -171,6 +171,11 @@ git clone https://github.com/Gogh-Co/Gogh.git gogh
 ./gogh/themes/dracula.sh
 # if you want other theme: ./gogh/themes/nord.sh
 
+cd
+rm -r src/
+rm LICENSE.md
+rm readme.md
+
 echo "=========================================="
 echo "=== now proceed to manual installation ==="
 echo "=========================================="

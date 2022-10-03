@@ -40,11 +40,15 @@ The **manual** part:
 
 
 2. Run `zsh` and configure powerlevel10k
-3. Close gnome-terminal and run `cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local && tmux`.
+3. Close gnome-terminal and run 
+```sh
+cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local && tmux
+```
+
 4. Be patient and wait for changes to be applied. Now go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write `tmux`. That way, tmux will be run automatically when opening new terminal window. 
 Also, uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep"
 5. Run
-```
+```sh
 tmux set-option -g status-right ""
 tmux set -g mouse on
 tmux set -g terminal-overrides 'xterm*:smcup@:rmcup@'
