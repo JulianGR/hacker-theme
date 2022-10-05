@@ -16,3 +16,9 @@ polybar target -c ~/.config/polybar/current.ini &
 
 ## Center bar
 polybar center -c ~/.config/polybar/current.ini &
+
+## Right bar
+
+polybar logoutt -c ~/.config/polybar/current.ini &
+polybar reboot -c ~/.config/polybar/current.ini &
+polybar poweroff -c ~/.config/polybar/current.ini &
