@@ -11,7 +11,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 ## Launch
 
 ## Left bar
-polybar htb -c ~/.config/polybar/current.ini &
+polybar vpn -c ~/.config/polybar/current.ini &
 polybar target -c ~/.config/polybar/current.ini &
 
 ## Center bar

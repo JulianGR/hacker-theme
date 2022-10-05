@@ -49,14 +49,9 @@ The **manual** part:
 cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local && tmux
 ```
 
-4. Be patient and wait for changes to be applied. Now go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write `tmux`. That way, tmux will be run automatically when opening new terminal window. 
+4. Be patient and wait for changes to be applied. Now go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write `/home/$USER/.config/tmux_startup.sh`. That way, tmux will be run automatically when opening new terminal window. 
 Also, uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep"
-5. Run
-```sh
-tmux set-option -g status-right ""
-tmux set -g mouse on
-tmux set -g terminal-overrides 'xterm*:smcup@:rmcup@'
-```
+
 
 
 **You are done!!** 
@@ -65,30 +60,54 @@ Close session and select BSPWM.
 # Shortcuts
 
 ## General windowing in Bspwm
+muy utiles
 <kbd>Windows</kbd> + <kbd>Enter</kbd> : Open gnome-terminal  
 <kbd>Windows</kbd> + <kbd>W</kbd> : Close current window  
 <kbd>Windows</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Move across windows of current workspace  
 <kbd>Windows</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Change workspace 
 
 
-
+menos utiles
 <kbd>Windows</kbd> + <kbd>D</kbd> : Open Rofi. <kbd>Esc</kbd> to close it.  
 <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> : Reboot bspwm config  
 <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> : Close session
 
 
 
+
+no funciona y me gustaria que funcioanse
+<kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Move the current window to another workspace.   
+
+
+si funciona
 <kbd>Windows</kbd> + <kbd>T</kbd> : Switch the current window to "terminal" (normal) mode. It is useful when the window is in full screen or floating mode.  
-<kbd>Windows</kbd> + <kbd>M</kbd> : Switch the current window to "full" mode (does not occupy the polybar). Press the same keys to return to "terminal" (normal) mode.  
-<kbd>Windows</kbd> + <kbd>F</kbd> : Switch the current window to full screen mode (occupies the entire window including the polybar).  
 <kbd>Windows</kbd> + <kbd>S</kbd> : Switch the current window to "floating" mode.  
-<kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Move the current window to another workspace.   
-<kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Change the size of the current window (only works if it is in terminal or floating mode).   
 <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Change the position of the current window (only works in floating mode).  
+
+
 <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> : Open Google Chrome 
 <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Show preselect and then open a window (a terminal, Google Chrome, a file, etc.). <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> to undo the preselect.  
 
 ## Tmux shortcuts
+
+**Prefix** : <kbd>Ctrl</kbd> + <kbd>B</kbd>
+
+<kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>: split horizontally 
+<kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd>: split vertically
+
+<kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
+<kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
+
+ <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
+ <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
+
+ <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
+ <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window
+
+
+para copiar: seleccionamos con el ratón lo que queramos copiar (es más rápido)
+
+ <kbd>PREFIX</kbd> + <kbd>]</kbd>: paste
 
 
 # Custom commands

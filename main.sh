@@ -84,14 +84,17 @@ echo 'picom --experimental-backends &' >> ~/.config/bspwm/bspwmrc
 sudo rm -r picom/
 sudo sed -i "s/bspc monitor -d I II III IV V VI VII VIII IX X/bspc monitor -d I II III IV V VI/" .config/bspwm/bspwmrc
 
+cd
+cp  hacker-theme/tools/tmux_startup.sh ~/.config/
+chmod +x  ~/.config/tmux_startup.sh
 
 # =========== Installing polybar's fonts ===============
 sudo cp ~/.config/polybar/fonts/* /usr/share/fonts
 
 # =========== Installing custom scripts for polybar ===============
-wget https://raw.githubusercontent.com/yorkox0/exaple01/main/hackthebox.sh
-chmod +x hackthebox.sh
-mv hackthebox.sh ~/.config/bin
+cp hacker-theme/tools/vpn.sh .
+chmod +x vpn.sh
+mv vpn.sh ~/.config/bin
 cp hacker-theme/tools/target_to_hack.sh .
 chmod +x target_to_hack.sh
 mv target_to_hack.sh ~/.config/bin
