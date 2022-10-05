@@ -49,7 +49,7 @@ The **manual** part:
 cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local && tmux
 ```
 
-4. Be patient and wait for changes to be applied. Now go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write `/home/$USER/.config/tmux_startup.sh`. That way, tmux will be run automatically when opening new terminal window. 
+4. Be patient and wait for changes to be applied. Now go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write `/home/[YOUR USERNAME]/.config/tmux_startup.sh`. That way, tmux will be run automatically when opening new terminal window. 
 Also, uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep"
 
 
