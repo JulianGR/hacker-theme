@@ -1,7 +1,7 @@
 Tested in Parrot Security OS. It is likely that it will work on every Debian-based system.
 
 # Overview
-![BSPWM](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview-photo.png)
+![BSPWM](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/photo.png)
 
 
 
