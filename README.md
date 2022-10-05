@@ -1,7 +1,7 @@
 Tested in Parrot Security OS. It is likely that it will work on every Debian-based system.
 
 # Overview
-![BSPWM](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview.gif)
+![BSPWM](hhttps://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview-photo.png)
 
 
 
@@ -22,7 +22,6 @@ Tested in Parrot Security OS. It is likely that it will work on every Debian-bas
 - [**Polybar**](https://github.com/polybar/polybar)
 - [**sxhkd**](https://github.com/baskerville/sxhkd): Daemon for shorcuts
 
-![BSPWM2](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/overview.png)
 
 # Installation
 The installation is made up of two parts: one automatic and one manual (I could have made it automatic, but manual installation has less probability of errors). 
