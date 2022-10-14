@@ -65,55 +65,48 @@ Close session and select BSPWM.
 
 # Shortcuts
 
+If you want to change them, check `tools/sxhkdrc`
+
 ## General windowing in Bspwm
-muy utiles
-<kbd>Windows</kbd> + <kbd>Enter</kbd> : Open gnome-terminal  
-<kbd>Windows</kbd> + <kbd>W</kbd> : Close current window  
-<kbd>Windows</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Move across windows of current workspace  
-<kbd>Windows</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Change workspace 
+### Most useful
++ <kbd>CTRL</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> : Open gnome-terminal  
++ <kbd>Windows</kbd> + <kbd>W</kbd> : Close current window  
++ <kbd>Windows</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Move across windows of current workspace  
++ <kbd>Windows</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Change workspace 
++ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Move the current window to another workspace. 
++ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> : Open Google Chrome 
++ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> : Open Opera
++ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> : Open Firefox
 
-
-menos utiles
-<kbd>Windows</kbd> + <kbd>D</kbd> : Open Rofi. <kbd>Esc</kbd> to close it.  
-<kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> : Reboot bspwm config  
-<kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> : Close session
-
-
-
-
-no funciona y me gustaria que funcioanse
-<kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Move the current window to another workspace.   
-
-
-si funciona
-<kbd>Windows</kbd> + <kbd>T</kbd> : Switch the current window to "terminal" (normal) mode. It is useful when the window is in full screen or floating mode.  
-<kbd>Windows</kbd> + <kbd>S</kbd> : Switch the current window to "floating" mode.  
-<kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Change the position of the current window (only works in floating mode).  
-
-
-<kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> : Open Google Chrome 
-<kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Show preselect and then open a window (a terminal, Google Chrome, a file, etc.). <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> to undo the preselect.  
+### Least useful
++ <kbd>Windows</kbd> + <kbd>D</kbd> : Open Rofi. <kbd>Esc</kbd> to close it.  
++ <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> : Reboot bspwm config  
++ <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> : Close session
++ <kbd>Windows</kbd> + <kbd>T</kbd> : Switch the current window to "terminal" (normal) mode. It is useful when the window is in full screen or floating mode.  
++ <kbd>Windows</kbd> + <kbd>S</kbd> : Switch the current window to "floating" mode.  
++ <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Change the position of the current window (only works in floating mode).  
++ <kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Show preselect and then open a window (a terminal, Google Chrome, a file, etc.)<kbd>Windows</kbd> + <kbd>Ctrl</kbd> + <kbd>Space</kbd> to undo the preselect.  
 
 ## Tmux shortcuts
 
 **Prefix** : <kbd>Ctrl</kbd> + <kbd>B</kbd>
 
-<kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>: split horizontally 
-<kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd>: split vertically
++ <kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>: split horizontally 
++ <kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd>: split vertically
 
-<kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
-<kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
++ <kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
++ <kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
 
- <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
- <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
++ <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
++ <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
 
- <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
- <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window
++ <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
++ <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window
 
 
-para copiar: seleccionamos con el ratón lo que queramos copiar (es más rápido)
 
- <kbd>PREFIX</kbd> + <kbd>]</kbd>: paste
+To copy: select what you want to copy with the mouse (its faster)
++ <kbd>PREFIX</kbd> + <kbd>]</kbd>: paste
 
 
 # Custom commands
