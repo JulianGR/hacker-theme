@@ -93,16 +93,12 @@ If you want to change them, check `tools/sxhkdrc`
 
 + <kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>2</kbd>: split horizontally 
 + <kbd>PREFIX</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd>: split vertically
-
 + <kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
 + <kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
-
 + <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
 + <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
-
 + <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
 + <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window
-
 
 
 To copy: select what you want to copy with the mouse (its faster)
