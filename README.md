@@ -43,21 +43,12 @@ The **manual** part:
 
 
 2. Run `zsh` and configure powerlevel10k
-3. Close gnome-terminal and run 
-```sh
-cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local && tmux
-```
 
-4. Go to preferences of gnome-terminal and Order and title tab. Check "Run custom command" and write 
+3. Go to preferences of gnome-terminal. Uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep". Now, under "Order and title" tab, check "Run custom command" and write 
 ```
 /home/[YOUR USERNAME]/.config/tmux_startup.sh
 ```
 That way, tmux will be run automatically when opening new terminal window. 
-5. Uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep"
-6. [OPTIONAL]
-
-
-
 
 
 **You are done!!** 
@@ -96,6 +87,7 @@ If you want to change them, check `tools/sxhkdrc`
 + <kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
 + <kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
 + <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
++ <kbd>CTRL</kbd> + <kbd>d</kbd>: remove window (yes, without the prefix)
 + <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
 + <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
 + <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window
