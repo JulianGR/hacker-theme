@@ -15,7 +15,7 @@ Tested in Parrot Security OS. It is likely that it will work on every Debian-bas
   - Plugin manager for ZSH: [Antigen](https://github.com/zsh-users/antigen)
   - Theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
   - Color scheme: [Gogh - Nord](https://gogh-co.github.io/Gogh/)
-  - [Tmux](https://en.wikipedia.org/wiki/Tmux) + [Oh-my-tmux](https://github.com/gpakosz/.tmux) + [tpm](https://github.com/tmux-plugins/tpm) + [Dracula](https://draculatheme.com/tmux) theme
+  - [Tmux](https://en.wikipedia.org/wiki/Tmux) + [Oh-my-tmux](https://github.com/gpakosz/.tmux) + [tpm](https://github.com/tmux-plugins/tpm) + [Nord](https://github.com/arcticicestudio/nord-tmux) theme
 - **Compositor**: [Picom](https://github.com/jonaburg/picom)
 - **Application Launcher**: [Rofi](https://github.com/davatorium/rofi)
 - **Font**: [Hack Nerd Font](https://www.nerdfonts.com/)

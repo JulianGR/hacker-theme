@@ -2,7 +2,7 @@ tmux_conf_copy_to_os_clipboard=true
 
 set -g @plugin 'tmux-plugins/tmux-sensible'
 set -g @plugin 'noscript/tmux-mighty-scroll'
-set -g @plugin 'dracula/tmux'
+set -g @plugin "arcticicestudio/nord-tmux"
 
 set -s default-terminal 'xterm-256color'
 
@@ -14,6 +14,11 @@ set -g mouse on
 
 set-option -g status-right ""
 set -g status-right ""
+
+unbind C-a
+
+bind-key -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel xclip
+
 
 
 # for debuggin purposes:
