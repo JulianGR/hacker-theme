@@ -2,7 +2,7 @@
 
 # terminal emulator
 ctrl + alt + t
-	gnome-terminal
+	mate-terminal
 
 # program launcher
 super + d
@@ -127,5 +127,5 @@ super + shift + f
 
 # Open Burpsuite Professional
 
-super + ctrl + b
-	gksudo burp
+super + shift + b
+	burpsuite

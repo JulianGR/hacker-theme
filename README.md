@@ -7,9 +7,9 @@ Tested in Parrot Security OS. It is likely that it will work on every Debian-bas
 
 
 ## System setup:
-- **OS**: [Parrot security OS](https://www.parrotsec.org/)
+- **OS**: [Kali + gnome DE](https://www.kali.org/)
 - **WM**: [bspwm](https://github.com/baskerville/bspwm)
-- **Terminal**: [gnome-terminal](https://en.wikipedia.org/wiki/GNOME_Terminal)
+- **Terminal**: [mate-terminal](https://github.com/mate-desktop/mate-terminal)
 - **Shell**: 
   - [ZSH](https://www.zsh.org/) + [Oh-my-zsh](https://ohmyz.sh/)
   - Plugin manager for ZSH: [Antigen](https://github.com/zsh-users/antigen)
@@ -29,7 +29,7 @@ The installation is made up of two parts: one automatic and one manual (I could 
 
 For the **automatic** part:
 
-> For Kali users, read the script
+> For ParrotOS users, read the script
 
 ```
 git clone https://github.com/JulianGR/hacker-theme
@@ -63,7 +63,7 @@ If you want to change them, check `tools/sxhkdrc`
 
 ## General windowing in Bspwm
 ### Most useful
-+ <kbd>CTRL</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> : Open gnome-terminal  
++ <kbd>CTRL</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> : Open mate-terminal  
 + <kbd>Windows</kbd> + <kbd>W</kbd> : Close current window  
 + <kbd>Windows</kbd> + <kbd>(⬆⬅⬇➡)</kbd> : Move across windows of current workspace  
 + <kbd>Windows</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Change workspace 
@@ -73,6 +73,7 @@ If you want to change them, check `tools/sxhkdrc`
 + <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> : Open Firefox
 
 ### Least useful
++ <kbd>Windows</kbd> + <kbd>ESC</kbd>: restart sxhkd
 + <kbd>Windows</kbd> + <kbd>D</kbd> : Open Rofi. <kbd>Esc</kbd> to close it.  
 + <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>R</kbd> : Reboot bspwm config  
 + <kbd>Windows</kbd> + <kbd>Alt</kbd> + <kbd>Q</kbd> : Close session

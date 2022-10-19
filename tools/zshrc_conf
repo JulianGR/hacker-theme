@@ -39,9 +39,11 @@ alias l='colorls --group-directories-first'
 alias ls='colorls --group-directories-first'
 alias la='colorls -la --group-directories-first'
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias cat='/usr/bin/batcat'
+alias cat='/usr/bin/batcat -l ruby -p'
 alias vim='nvim '
 alias python='python3'
+
+alias ptyhon='python3'
 
 
 ZSH_TMUX_AUTOSTART=true

@@ -4,12 +4,12 @@
 # =========== Installing dependencies ===============
 sudo apt-get update -y
 
-# If you want to install this theme in a non Parrot Security OS system, uncomment below and comment  sudo parrot-upgrade 
+# If you want to install this theme in Parrot Security OS system, comment below and uncomment  sudo parrot-upgrade -y
 
-#sudo apt upgrade -y
-sudo parrot-upgrade -y
+sudo apt upgrade -y
+#sudo parrot-upgrade -y
 
-sudo DEBIAN_FRONTEND=noninteractive apt install acpi appstream apt-config-icons apt-file apt-transport-https autoconf automake bat binutils-mingw-w64-x86-64 bison bloodhound bluez brightnessctl bspwm build-essential ca-certificates caja cgroupfs-mount check cmake cmake-data cppcheck curl default-mysql-client docker.io doxygen feh ffmpeg ffuf flex fonts-open-sans fonts-powerline ftp fwupd fwupd-amd64-signed git gnome-software gnome-software-common gnome-terminal gnupg go-md2man gobject-introspection golang gpick hexedit inotify-tools jq kate kitty libasound2-dev libcairo2-dev libconfig-dev libdbus-1-dev libev-dev libevdev-dev libfontconfig1-dev libfreetype6-dev libgirepository1.0-dev libgl-dev libgl1-mesa-dev libjsoncpp-dev liblua5.3-dev libmpdclient-dev libnl-genl-3-dev libpam0g-dev libpcre2-dev libpcre3-dev libpixman-1-dev libpulse-dev libuv1-dev libx11-xcb-dev libxcb-composite0-dev libxcb-cursor-dev libxcb-damage0-dev libxcb-ewmh-dev libxcb-glx0-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-present-dev libxcb-randr0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-util0-dev libxcb-xfixes0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-xtest0-dev libxcb1-dev libxext-dev libxft-dev libxkbcommon-dev libxrandr-dev light-locker lightdm lsb-release lua-check lua5.3 make meson mingw-w64-common mingw-w64-x86-64-dev neo4j neovim net-tools nfs-common ninja-build nodejs npm ohcount open-vm-tools openvpn p7zip-full pkg-config pngcheck polybar python2 python3 python3-dev python3-pip python3-setuptools python3-sphinx python3-xcbgen rlwrap rofi rpcbind runc scrot scrub seclists slim software-properties-common software-properties-gtk ssss tmux upower uthash-dev vim wget wmname xcb xcb-proto xclip xdotool xfce4-power-manager xorg zsh -y
+sudo DEBIAN_FRONTEND=noninteractive apt install acpi appstream apt-config-icons apt-file apt-transport-https autoconf automake bat binutils-mingw-w64-x86-64 bison bloodhound bluez brightnessctl bspwm build-essential ca-certificates caja cgroupfs-mount check cmake cmake-data cppcheck curl default-mysql-client docker.io doxygen feh ffmpeg ffuf flex fonts-open-sans fonts-powerline ftp fwupd fwupd-amd64-signed git gnome-software gnome-software-common gnome-terminal gnupg go-md2man gobject-introspection golang gpick hexedit inotify-tools jq kate kitty libasound2-dev libcairo2-dev libconfig-dev libdbus-1-dev libev-dev libevdev-dev libfontconfig1-dev libfreetype6-dev libgirepository1.0-dev libgl-dev libgl1-mesa-dev libjsoncpp-dev liblua5.3-dev libmpdclient-dev libnl-genl-3-dev libpam0g-dev libpcre2-dev libpcre3-dev libpixman-1-dev libpulse-dev libuv1-dev libx11-xcb-dev libxcb-composite0-dev libxcb-cursor-dev libxcb-damage0-dev libxcb-ewmh-dev libxcb-glx0-dev libxcb-icccm4-dev libxcb-image0-dev libxcb-keysyms1-dev libxcb-present-dev libxcb-randr0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-sync-dev libxcb-util0-dev libxcb-xfixes0-dev libxcb-xinerama0-dev libxcb-xkb-dev libxcb-xrm-dev libxcb-xtest0-dev libxcb1-dev libxext-dev libxft-dev libxkbcommon-dev libxrandr-dev light-locker lightdm lsb-release lua-check lua5.3 make mate-terminal meson mingw-w64-common mingw-w64-x86-64-dev neo4j neovim net-tools nfs-common ninja-build nodejs npm ohcount open-vm-tools openvpn p7zip-full pkg-config pngcheck polybar python2 python3 python3-dev python3-pip python3-setuptools python3-sphinx python3-xcbgen rlwrap rofi rpcbind runc scrot scrub seclists slim software-properties-common software-properties-gtk ssss tmux upower uthash-dev vim wget wmname xcb xcb-proto xclip xdotool xfce4-power-manager xorg zsh -y
 
 
 # =========== Installing BSPWM ===============
@@ -148,11 +148,10 @@ sudo mv *.ttf /usr/share/fonts
 rm *.zip
 
 # =========== Installing batcat ===============
-# with the time i dislike it
-# cd
-# mkdir -p ~/.local/bin 
-# ln -s /usr/bin/batcat ~/.local/bin/bat
-# cd
+cd
+mkdir -p ~/.local/bin 
+ln -s /usr/bin/batcat ~/.local/bin/bat
+cd
 
 
 
