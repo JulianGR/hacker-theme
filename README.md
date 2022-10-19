@@ -28,6 +28,9 @@ The installation is made up of two parts: one automatic and one manual (I could 
 
 
 For the **automatic** part:
+
+> For Kali users, read the script
+
 ```
 git clone https://github.com/JulianGR/hacker-theme
 cd hacker-theme/ && chmod +x main.sh
