@@ -125,7 +125,8 @@ super + shift + o
 super + shift + f
 	firefox
 
-# Open Burpsuite Professional
-
 super + shift + b
 	burpsuite
+
+super + shift + k
+	kate

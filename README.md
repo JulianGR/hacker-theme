@@ -1,7 +1,7 @@
-Tested in Parrot Security OS. It is likely that it will work on every Debian-based system.
+Tested in Kali and Parrot Os (Check the script). It is likely that it will work on every Debian-based system.
 
 # Overview
-![BSPWM](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/photo.png)
+![](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview.png)
 
 
 
@@ -41,13 +41,13 @@ The **manual** part:
 
 1. After you've run the script,
 	1. Close current gnome-terminal
-	2. Open new gnome-terminal and go to Edit > Preferences
+	2. Open new mate-terminal and go to Edit > Preferences
 	3. Uncheck "Use monospace font" and change font to "Hack Nerd font Regular"
 
 
 2. Run `zsh` and configure powerlevel10k
 
-3. Go to preferences of gnome-terminal. Uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep". Now, under "Order and title" tab, check "Run custom command" and write 
+3. Go to preferences of mate-terminal. Uncheck "Show menu bar in new terminals" and uncheck "terminal sound beep". Now, under "Order and title" tab, check "Run custom command" and write 
 ```
 /home/[YOUR USERNAME]/.config/tmux_startup.sh
 ```
