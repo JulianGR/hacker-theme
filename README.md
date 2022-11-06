@@ -105,8 +105,9 @@ To copy: select what you want to copy with the mouse (its faster)
 
 ## Target
 ```sh
-  settarget  "10.10.10.10"
+  settarget  10.10.10.10
   cleartarget
+  escaneame # automatically scans services and versions of only open ports of IP set with settarget
 ```
 
 

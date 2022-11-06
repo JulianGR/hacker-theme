@@ -111,13 +111,6 @@ wget https://raw.githubusercontent.com/VaughnValle/blue-sky/master/nord.rasi
 cp nord.rasi ~/.config/rofi/themes
 sudo rm nord.rasi
 
-
-# =========== Adding settarget and cleartarget commands ===============
-sudo cp hacker-theme/tools/settarget /bin
-sudo cp hacker-theme/tools/cleartarget /bin
-sudo chmod +x /bin/settarget
-sudo chmod +x /bin/cleartarget
-
 # =========== Installing google chrome ===============
 cd
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
