@@ -126,7 +126,9 @@ super + shift + f
 	firefox
 
 super + shift + b
-	burpsuite
+	/home/$USER/BurpSuitePro/BurpSuitePro
 
 super + shift + k
 	kate
+
+# TODO: cerrar cosas con W o D, pero no mezcla
