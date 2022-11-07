@@ -41,8 +41,8 @@ alias la='colorls -la --group-directories-first'
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias cat='/usr/bin/batcat -l ruby -p -P'
 alias vim='nvim '
-alias ptyhon='python3'
-alias nc = 'rlwrap nc'
+alias ptyhon='python'
+alias nc='rlwrap nc'
 
 ZSH_TMUX_AUTOSTART=true
 
