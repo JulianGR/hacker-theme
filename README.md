@@ -91,7 +91,7 @@ If you want to change them, check `tools/sxhkdrc`
 + <kbd>PREFIX HOLDING</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: resize panel
 + <kbd>PREFIX</kbd> + <kbd>(⬆⬅⬇➡)</kbd>: change panel
 + <kbd>PREFIX</kbd> + <kbd>c</kbd>: create window
-+ <kbd>CTRL</kbd> + <kbd>d</kbd>: remove window (yes, without the prefix)
++ <kbd>CTRL</kbd> + <kbd>d</kbd>: remove tmux tab (yes, without the prefix)
 + <kbd>PREFIX</kbd> + <kbd>,</kbd>: rename window
 + <kbd>PREFIX</kbd> + <kbd>SHIFT</kbd> + <kbd>1</kbd>: move panel that was splitted into new window
 + <kbd>PREFIX</kbd> + <kbd>n / p</kbd>: change window

@@ -172,6 +172,15 @@ sudo apt update
 sudo apt install code
 rm microsoft.pgp
 
+
+# =========== Fixing scrolling speed ===============
+sudo apt install imwheel
+echo "Set it to 3"
+bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
+
+
+
+
 # ===================================
 # =========== CONSOLE ===============
 # ===================================

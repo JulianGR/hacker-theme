@@ -31,10 +31,10 @@ antigen apply
 # | ::::::: Alias :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: >>>
 alias sudo='sudo '
 alias ..='cd ..'
+
 alias cc='clear'
 alias c='clear'
-alias u='sudo apt update'
-alias i='sudo apt install'
+
 alias l='colorls --group-directories-first'
 alias ls='colorls --group-directories-first'
 alias la='colorls -la --group-directories-first'
@@ -83,7 +83,13 @@ function settarget(){
 
 function cleartarget(){
 	echo "" > ~/.config/bin/target;
-	unset $TARGET;
+
+	if [ -z "${TARGET}" ]; then
+		# if not set: do nothing
+		# (to prevent showing error message)
+	else
+		unset $TARGET;
+	fi
 }
 
 

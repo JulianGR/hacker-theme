@@ -6,4 +6,5 @@ tmux set -g status-right ""
 tmux set -g mouse on
 tmux set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 setxkbmap -option
+imwheel
 tmux

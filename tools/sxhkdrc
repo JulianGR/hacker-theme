@@ -118,7 +118,6 @@ super + ctrl + {Left,Down,Up,Right}
 super + shift + g
 	google-chrome
 
-
 super + shift + o
 	opera
 
@@ -128,7 +127,5 @@ super + shift + f
 super + shift + b
 	/home/$USER/BurpSuitePro/BurpSuitePro
 
-super + shift + c
+super + shift + e
 	code
-
-# TODO: cerrar cosas con W o D, pero no mezcla
