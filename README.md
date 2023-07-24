@@ -49,6 +49,7 @@ The **manual** part:
 That way, tmux will be run automatically when opening new terminal window. 
 
 + https://www.youtube.com/watch?v=w1ZEEc-ZY4w
++ remove default keyboard shortcuts
 
 
 
