@@ -39,7 +39,7 @@ alias l='colorls --group-directories-first'
 alias ls='colorls --group-directories-first'
 alias la='colorls -la --group-directories-first'
 alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias cat='/usr/bin/batcat -l ruby -p -P'
+alias cat='batcat -l ruby -p -P'
 alias vim='nvim '
 alias ptyhon='python'
 alias nc='rlwrap nc'
@@ -92,28 +92,6 @@ function man() {
     man "$@"
 }
 
-# fzf improvement
-function fzf-lovely(){
-
-	if [ "$1" = "h" ]; then
-		fzf -m --reverse --preview-window down:20 --preview '[[ $(file --mime {}) =~ binary ]] &&
- 	                echo {} is a binary file ||
-	                 (bat --style=numbers --color=always {} ||
-	                  highlight -O ansi -l {} ||
-	                  coderay {} ||
-	                  rougify {} ||
-	                  cat {}) 2> /dev/null | head -500'
-
-	else
-	        fzf -m --preview '[[ $(file --mime {}) =~ binary ]] &&
-	                         echo {} is a binary file ||
-	                         (bat --style=numbers --color=always {} ||
-	                          highlight -O ansi -l {} ||
-	                          coderay {} ||
-	                          rougify {} ||
-	                          cat {}) 2> /dev/null | head -500'
-	fi
-}
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

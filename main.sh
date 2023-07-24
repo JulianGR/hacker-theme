@@ -3,26 +3,16 @@
 
 # =========== Installing dependencies ===============
 sudo apt-get update -y
-
-# =========== PARROT OS USERS ATTENTION ===============
-
-# If you want to install this theme in Parrot Security OS system, 
-# 1. comment below and uncomment  sudo parrot-upgrade -y
-#2. Below there is a block called Python for Kali. Comment the whole block
-
 sudo apt upgrade -y
-#sudo parrot-upgrade -y
 
-sudo DEBIAN_FRONTEND=noninteractive apt install acpi appstream apt-config-icons apt-file apt-transport-https autoconf automake bat binutils-mingw-w64-x86-64 bison  bluez brightnessctl  build-essential ca-certificates caja cgroupfs-mount check cmake cmake-data cppcheck curl default-mysql-client docker.io doxygen  ffmpeg ffuf flex fonts-open-sans fonts-powerline ftp gpg gnupg2 fwupd fwupd-amd64-signed git gnome-software gnome-software-common  gnupg go-md2man gobject-introspection golang gpick hexedit inotify-tools jq locate lsb-release  make mate-terminal meson mingw-w64-common mingw-w64-x86-64-dev  net-tools nfs-common ninja-build nodejs npm ohcount open-vm-tools openvpn p7zip-full pkg-config pngcheck python2 python3 python3-dev python3-pip python3-setuptools python3-sphinx python3-xcbgen rlwrap  rpcbind runc scrot scrub seclists slim software-properties-common software-properties-gtk  tmux  uthash-dev vim wget wmname xcb xcb-proto xclip xdotool  zsh libssl-dev  llvm  xz-utils tk-dev python3-openssl -y
+
+sudo DEBIAN_FRONTEND=noninteractive apt install adwaita-icon-theme aircrack-ng amass apt-transport-https apt-utils arp-scan arping autoconf automake autopsy bash-completion bat binutils binwalk bison bloodhound build-essential burpsuite ca-certificates ca-certificates-java cadaver cargo cewl cherrytree cmake crackmapexec dirb dirbuster dnsrecon doxygen enum4linux evil-winrm exploitdb feroxbuster ffmpeg ffuf fonts-font-awesome fonts-hack fonts-lato fonts-open-sans fonts-powerline foremost git gnome-software gnome-software-common gnupg2 gobuster golang gophish gparted gpg gzip hashcat hexedit hping3 hydra imagemagick java-common javascript-common john jq kali-wallpapers-2022 kali-wallpapers-2023 keyboard-configuration keyutils libcrypt1 libssl-dev locate macchanger make man-db masscan medusa meson mimikatz mingw-w64-common mingw-w64-i686-dev mingw-w64-x86-64-dev mitmproxy nano ncrack neo4j neofetch net-tools network-manager nfs-common nmap nodejs npm open-vm-tools open-vm-tools-desktop openconnect openfortivpn openjdk-11-jre openjdk-11-jre-headless openjdk-17-jre openjdk-17-jre-headless openvpn os-prober p7zip p7zip-full passwd php php8.2 php8.2-cli php8.2-common pngcheck powershell powershell-empire powersploit proxychains4 python2 python2.7 python3 radare2 remmina rlwrap rpcbind ruby socat software-properties-common software-properties-gtk sqlite3 sqlmap tcpdump tcpreplay unrar unzip vlan wafw00f wfuzz wget wireshark zsh zsh-autosuggestions zsh-common zsh-syntax-highlighting -y
 
 sudo apt-get update -y
 sudo apt autoremove -y
 
 
 # =========== Installing configs ===============
-mkdir ~/.wallpapers
-cp hacker-theme/tools/wallpaper.jpg ~/.wallpapers
-echo 'feh --bg-fill ~/.wallpapers/wallpaper.jpg' >> ~/.config/feh
 cd
 cp hacker-theme/tools/tmux_startup.sh ~/.config/
 chmod +x  ~/.config/tmux_startup.sh
@@ -43,7 +33,6 @@ sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install -y opera-stable
 
 # =========== Installing python2 for kali ===============
-# =========== remove this block if ParrotOS ===============
 cd
 curl https://pyenv.run | bash
 pyenv install 2.7.18
@@ -56,27 +45,12 @@ pyenv install 2.7.18
 # =========== Installing gems ===============
 sudo gem install evil-winrm colorls
 
-# =========== Installing crackmapexec ===============
-python3 -m pip install pipx
-pipx ensurepath
-pipx install crackmapexec
 
 # =========== Reducing time grub ===============
 sudo sed -i "s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/" /etc/default/grub
 sudo update-grub
 
-# =========== Installing Hack Nerd fonts ===============
-cd
-cp hacker-theme/tools/Hack.zip .
-unzip Hack.zip
-sudo mv *.ttf /usr/share/fonts
-rm *.zip
 
-# =========== Installing batcat ===============
-cd
-mkdir -p ~/.local/bin 
-ln -s /usr/bin/batcat ~/.local/bin/bat
-cd
 
 # =========== Visual studio code ===============
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -86,11 +60,6 @@ sudo apt update
 sudo apt install code
 rm microsoft.pgp
 
-
-# =========== Fixing scrolling speed ===============
-sudo apt install imwheel
-echo "Set it to 3"
-bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
 
 
 
@@ -116,7 +85,6 @@ mkdir -p "$HOME/src"
 cd "$HOME/src"
 git clone https://github.com/Gogh-Co/Gogh.git gogh
 ./gogh/themes/nord.sh
-# if you want other theme: ./gogh/themes/dracula.sh
 
 cd
 sudo rm -r src/
@@ -129,3 +97,10 @@ sudo updatedb
 echo "=========================================="
 echo "=== now proceed to manual installation ==="
 echo "=========================================="
+
+
+
+# =========== Fixing scrolling speed ===============
+sudo apt install imwheel
+echo "Set it to 2"
+bash <(curl -s https://gist.githubusercontent.com/AshishKapoor/6f054e43578659b4525c47bf279099ba/raw/0b2ad8b67f02ebb01d99294b0ecb6feacc078f67/mousewheel.sh)

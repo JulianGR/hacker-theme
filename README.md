@@ -7,8 +7,7 @@ Tested in Kali and Parrot Os (Check the script). It is likely that it will work 
 
 
 ## System setup:
-- **OS**: [Kali + gnome DE](https://www.kali.org/)
-- **WM**: [bspwm](https://github.com/baskerville/bspwm)
+- **OS**: [Kali](https://www.kali.org/)
 - **Terminal**: [mate-terminal](https://github.com/mate-desktop/mate-terminal)
 - **Shell**: 
   - [ZSH](https://www.zsh.org/) + [Oh-my-zsh](https://ohmyz.sh/)
@@ -16,10 +15,7 @@ Tested in Kali and Parrot Os (Check the script). It is likely that it will work 
   - Theme: [powerlevel10k](https://github.com/romkatv/powerlevel10k)
   - Color scheme: [Gogh - Nord](https://gogh-co.github.io/Gogh/)
   - [Tmux](https://en.wikipedia.org/wiki/Tmux) + [Oh-my-tmux](https://github.com/gpakosz/.tmux) + [tpm](https://github.com/tmux-plugins/tpm) + [Nord](https://github.com/arcticicestudio/nord-tmux) theme
-- **Compositor**: [Picom](https://github.com/jonaburg/picom)
-- **Application Launcher**: [Rofi](https://github.com/davatorium/rofi)
 - **Font**: [Hack Nerd Font](https://www.nerdfonts.com/)
-- [**Polybar**](https://github.com/polybar/polybar)
 - [**sxhkd**](https://github.com/baskerville/sxhkd): Daemon for shorcuts
 
 
@@ -29,7 +25,6 @@ The installation is made up of two parts: one automatic and one manual (I could 
 
 For the **automatic** part:
 
-> For ParrotOS users, read the script
 
 ```
 git clone https://github.com/JulianGR/hacker-theme
@@ -52,6 +47,9 @@ The **manual** part:
 /home/[YOUR USERNAME]/.config/tmux_startup.sh
 ```
 That way, tmux will be run automatically when opening new terminal window. 
+
++ https://www.youtube.com/watch?v=w1ZEEc-ZY4w
+
 
 
 **You are done!!** 
@@ -103,14 +101,8 @@ To copy: select what you want to copy with the mouse (its faster)
 
 # Custom commands
 
-## Target
+
 ```sh
-  settarget  10.10.10.10
-  cleartarget
   escaneame # automatically scans services and versions of only open ports of IP set with settarget
 ```
-
-
-## Credits
-- Inspired by S4vitar (https://github.com/s4vitar), original scripts by yorkox0 (https://github.com/yorkox0/autoBspwm)
 
