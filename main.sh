@@ -16,6 +16,8 @@ sudo apt autoremove -y
 cd
 cp hacker-theme/tools/tmux_startup.sh ~/.config/
 chmod +x  ~/.config/tmux_startup.sh
+cd
+touch ~/.hushlogin
 
 
 # =========== Installing google chrome ===============
