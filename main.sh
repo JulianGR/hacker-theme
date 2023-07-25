@@ -12,11 +12,6 @@ sudo apt-get update -y
 sudo apt autoremove -y
 
 
-# =========== Installing configs ===============
-cd
-cp hacker-theme/tools/tmux_startup.sh ~/.config/
-chmod +x  ~/.config/tmux_startup.sh
-
 
 # =========== Installing google chrome ===============
 cd
@@ -75,15 +70,11 @@ rm microsoft.pgp
 
 
 
-# =========== Installing Oh my tmux ===============
-git clone https://github.com/gpakosz/.tmux.git /home/$USER/.tmux
-ln -s -f .tmux/.tmux.conf /home/$USER
-cp /home/$USER/.tmux/.tmux.conf.local /home/$USER
+# =========== Installing Antigen ===============
 
-cat /home/$USER/hacker-theme/tools/tmux_conf >> $HOME/.tmux.conf.local
 
 curl -L git.io/antigen > .antigen.zsh
-cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
+cp /home/$USER/hacker-theme/tools/zshrc_conf2 $HOME/.zshrc
 
 # =========== Installing color scheme ===============
 mkdir -p "$HOME/src"
