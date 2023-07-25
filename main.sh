@@ -12,6 +12,9 @@ sudo apt-get update -y
 sudo apt autoremove -y
 
 
+# =========== Installing configs ===============
+cd
+touch ~/.hushlogin
 
 # =========== Installing google chrome ===============
 cd
