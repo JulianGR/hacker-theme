@@ -5,7 +5,6 @@ Tested in Kali. It is likely that it will work on every Debian-based system.
 
 
 
-https://github.com/geodimm/dotfiles/tree/main
 
 
 
@@ -36,6 +35,7 @@ cd hacker-theme/ && chmod +x main.sh main2.sh
 After you've run this, run the following with **kitty**
 
 ```
+cd hacker-theme/
 ./main2.sh
 ```
 
@@ -79,3 +79,9 @@ Add them manually
   escaneame [ip] # automatic nmap
 ```
 
+
+
+# credits
+
+
+https://github.com/geodimm/dotfiles/

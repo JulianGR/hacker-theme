@@ -51,14 +51,6 @@ sudo apt install code
 rm microsoft.pgp
 
 
-# =========== Installing shell ===============
-
-
-curl -L git.io/antigen > .antigen.zsh
-cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
-cp /home/$USER/hacker-theme/tools/kitty.conf $HOME/.config/kitty/kitty.conf
-cp /home/$USER/hacker-theme/tools/tab_bar.py $HOME/.config/kitty/tab_bar.py
-
 # =========== Updating files (for locate command) ===============
 sudo updatedb
 
@@ -80,7 +72,7 @@ git clone https://github.com/Gogh-Co/Gogh.git gogh
 cd
 sudo rm -r gogh/ hacker-theme/ Documents/ Music/ Pictures/ Public/ Templates/ Videos/
 
-
+xfwm4-settings
 
 
 echo "=========================================="
