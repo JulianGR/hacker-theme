@@ -5,6 +5,9 @@ Tested in Kali and Parrot Os (Check the script). It is likely that it will work 
 
 
 
+https://github.com/geodimm/dotfiles/tree/main
+
+
 
 ## System setup:
 - **OS**: [Kali](https://www.kali.org/)
