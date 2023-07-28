@@ -48,16 +48,24 @@ sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/
 echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" | sudo tee /etc/apt/sources.list.d/vscode.list
 sudo apt update
 sudo apt install code
-rm microsoft.pgp
-
-
-# =========== Updating files (for locate command) ===============
-sudo updatedb
+cd hacker-theme/
+rm microsoft.gpg
 
 
 # =========== Fixing scrolling speed ===============
 sudo apt install imwheel
-echo "Set it to 1"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
+echo "Set it to 2"
 bash <(curl -s https://gist.githubusercontent.com/AshishKapoor/6f054e43578659b4525c47bf279099ba/raw/0b2ad8b67f02ebb01d99294b0ecb6feacc078f67/mousewheel.sh)
 
 
@@ -73,6 +81,9 @@ cd
 sudo rm -r gogh/ hacker-theme/ Documents/ Music/ Pictures/ Public/ Templates/ Videos/
 
 xfwm4-settings
+
+# =========== Updating files (for locate command) ===============
+sudo updatedb
 
 
 echo "=========================================="
