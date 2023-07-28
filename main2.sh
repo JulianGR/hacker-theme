@@ -49,7 +49,7 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" 
 sudo apt update
 sudo apt install code
 cd hacker-theme/
-rm microsoft.gpg
+sudo rm microsoft.gpg
 
 
 # =========== Fixing scrolling speed ===============
