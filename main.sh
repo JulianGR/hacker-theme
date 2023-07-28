@@ -10,7 +10,11 @@ sudo DEBIAN_FRONTEND=noninteractive apt install adwaita-icon-theme aircrack-ng a
 sudo apt-get update -y
 sudo apt autoremove -y
 
+# =========== Installing shell ===============
 
+cd
+curl -L git.io/antigen > .antigen.zsh
+cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
 
 echo "=========================================="
 echo "=== Execute main2.sh WITH KITTY ==="
