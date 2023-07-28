@@ -57,8 +57,8 @@ Add them manually
 ### OS-wide shortcuts
 + <kbd>CTRL</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> : Open kitty
 + <kbd>Windows</kbd> + <kbd>W</kbd> : Close current window  
-+ <kbd>Windows</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Change workspace 
-+ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>(1,2,3,4,5,6,7,8,9,0)</kbd> : Move the current window to another workspace. 
++ <kbd>Windows</kbd> + <kbd>(1,2,3,4)</kbd> : Change workspace 
++ <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>(1,2,3,4)</kbd> : Move the current window to another workspace. 
 + <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>G</kbd> : Open Google Chrome 
 + <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd> : Open Opera
 + <kbd>Windows</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> : Open Firefox
