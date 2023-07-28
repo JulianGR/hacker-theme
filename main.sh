@@ -16,6 +16,18 @@ cd
 curl -L git.io/antigen > .antigen.zsh
 cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
 
+
+# =========== Installing Hack Nerd fonts ===============
+cd
+cp hacker-theme/tools/Hack.zip .
+unzip Hack.zip
+sudo mv *.ttf /usr/share/fonts
+rm *.zip
+
+
+# =========== Installing gems ===============
+sudo gem install evil-winrm colorls
+
 echo "=========================================="
 echo "=== Execute main2.sh WITH KITTY ==="
 echo "=========================================="

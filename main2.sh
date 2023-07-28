@@ -35,20 +35,12 @@ pyenv install 2.7.18
 
 
 
-# =========== Installing gems ===============
-sudo gem install evil-winrm colorls
-
 
 # =========== Reducing time grub ===============
 sudo sed -i "s/GRUB_TIMEOUT=5/GRUB_TIMEOUT=1/" /etc/default/grub
 sudo update-grub
 
-# =========== Installing Hack Nerd fonts ===============
-cd
-cp hacker-theme/tools/Hack.zip .
-unzip Hack.zip
-sudo mv *.ttf /usr/share/fonts
-rm *.zip
+
 
 # =========== Visual studio code ===============
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
