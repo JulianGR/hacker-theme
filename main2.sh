@@ -1,5 +1,15 @@
 #!/bin/zsh
 
+# =========== Installing shell ===============
+
+cd
+curl -L git.io/antigen > .antigen.zsh
+cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
+cp /home/$USER/hacker-theme/tools/kitty.conf $HOME/.config/kitty/kitty.conf
+cp /home/$USER/hacker-theme/tools/tab_bar.py $HOME/.config/kitty/tab_bar.py
+
+
+
 cd
 touch ~/.hushlogin
 
