@@ -59,7 +59,7 @@ alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias cat='batcat -l ruby -p -P'
 alias ptyhon='python'
 alias nc='rlwrap nc'
-
+alias ssh="kitty +kitten ssh"
 
 # ====== CUSTOM FUNCTIONS =====
 
