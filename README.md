@@ -1,10 +1,7 @@
 Tested in Kali. It is likely that it will work on every Debian-based system.
 
 # Overview
-![](https://raw.githubusercontent.com/JulianGR/hacker-theme/main/preview.png)
-
-
-
+![](https://raw.githubusercontent.com/JulianGR/hacker-theme/no-bspwn/preview.png)
 
 
 
