@@ -17,9 +17,9 @@ sudo apt autoremove -y
 cd
 curl -L git.io/antigen > .antigen.zsh
 cp /home/$USER/hacker-theme/tools/zshrc_conf $HOME/.zshrc
-cp /home/$USER/hacker-theme/tools/p10k.zsh $HOME/.p10k.zsh
-chown jules:jules $HOME/.p10k.zsh
-chmod 777 $HOME/.p10k.zsh
+#cp /home/$USER/hacker-theme/tools/p10k.zsh $HOME/.p10k.zsh
+#chown jules:jules $HOME/.p10k.zsh
+#chmod 777 $HOME/.p10k.zsh
 
 # =========== Installing Hack Nerd fonts ===============
 cd
