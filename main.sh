@@ -5,7 +5,7 @@ touch ~/.hushlogin
 # =========== Installing dependencies ===============
 sudo apt update -y
 sudo DEBIAN_FRONTEND=noninteractive apt full-upgrade -y
-sudo DEBIAN_FRONTEND=noninteractive apt install kali-linux-default
+sudo DEBIAN_FRONTEND=noninteractive apt install kali-linux-default -y
 
 sudo DEBIAN_FRONTEND=noninteractive apt install apt-transport-https autoconf automake aptitude bash-completion bat bison bloodhound burpsuite cargo cmake dconf-cli doxygen  feroxbuster ffmpeg fonts-hack fonts-open-sans fonts-powerline foremost  gnome-software gnome-software-common gnupg2 gobuster golang hexedit imagemagick  javascript-common  jq kali-wallpapers-2022 kali-wallpapers-2023 keyutils kitty libbz2-dev liblzma-dev libncursesw5-dev libreadline-dev libsqlite3-dev libssl-dev llvm locate  meson neo4j neofetch  network-manager nodejs npm open-vm-tools open-vm-tools-desktop openconnect openfortivpn openjdk-11-jre openjdk-11-jre-headless  openvpn os-prober pngcheck remmina rlwrap software-properties-common software-properties-gtk tk-dev uuid-runtime -y
 
