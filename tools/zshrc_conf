@@ -1,3 +1,11 @@
+
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Auto Update Enable
 DISABLE_AUTO_UPDATE="false"
 DISABLE_UPDATE_PROMPT="true"
@@ -59,8 +67,8 @@ alias myip="dig +short myip.opendns.com @resolver1.opendns.com"
 alias cat='batcat -l ruby -p -P'
 alias ptyhon='python'
 alias nc='rlwrap nc'
-alias ssh="kitty +kitten ssh"
-alias proxychains='proxychains -q'
+alias sshk="kitty +kitten ssh"
+alias kerbrute="/home/jules/herramientas/kerbrute"
 
 # ====== CUSTOM FUNCTIONS =====
 
@@ -96,30 +104,6 @@ function escaneame(){
 		clear;
 		cat scan;
 	fi	
-}
-
-#function escaneame(){
-#	if [ -z "${TARGET}" ]; then
-#		echo "You need to settarget!!";
-#	else
-#		sudo nmap -sS --open -vvv -p- -n -Pn --min-rate 9000 $TARGET -oG allPorts;
-#		a=$(extractPorts allPorts);
-#		sudo nmap -sCV --min-rate 9000 -vvv -p$a -n -Pn $TARGET -oN scan;
-#		clear;
-#		cat scan;
-#	fi	
-#}
-
-
-
-function settarget(){
-	cleartarget;
-	target=$1;
-	echo "$target" > ~/.config/bin/target;	
-}
-
-function cleartarget(){
-	echo "" > ~/.config/bin/target;
 }
 
 # ====================
@@ -185,3 +169,6 @@ setopt HIST_SAVE_NO_DUPS
 
 # Set the default umask
 umask 022
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
