@@ -26,6 +26,10 @@ sudo apt update
 sudo DEBIAN_FRONTEND=noninteractive apt install -y opera-stable
 
 # =========== Installing python2 for kali ===============
+cargo install --git https://github.com/sts10/tidy --locked --branch main
+
+
+# =========== tidy (wordlists) ===============
 cd
 curl https://pyenv.run | bash
 pyenv install 2.7.18
