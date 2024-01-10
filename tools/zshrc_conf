@@ -70,6 +70,8 @@ alias nc='rlwrap nc'
 alias sshk="kitty +kitten ssh"
 alias kerbrute="/home/jules/herramientas/kerbrute"
 
+export PATH="/home/jules/.cargo/bin:$PATH"
+
 # ====== CUSTOM FUNCTIONS =====
 
 if [[ -n $SSH_CONNECTION ]]; then
