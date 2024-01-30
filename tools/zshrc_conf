@@ -69,6 +69,7 @@ alias ptyhon='python'
 alias nc='rlwrap nc'
 alias sshk="kitty +kitten ssh"
 alias kerbrute="/home/jules/herramientas/kerbrute"
+alias dumpsterdiver='DumpsterDiver'
 
 export PATH="/home/jules/.cargo/bin:$PATH"
 
